@@ -98,9 +98,6 @@ public class Cadastro {
             }
 
         }
-        System.out.println(nome_lista);
-        System.out.println(idade_lista);
-        System.out.println(cpf_lista);
-        System.out.println(salario_lista);
+
     }
 }
