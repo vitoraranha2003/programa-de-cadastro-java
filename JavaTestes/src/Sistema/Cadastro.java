@@ -34,6 +34,11 @@ public class Cadastro {
 
                 System.out.print("CPF:");
                 String cpf = scanner.next();
+                if (cpf.length()!=11){
+                    System.out.println("CPF invalido. Insira um cpf com 11 caracteres");
+                    System.out.println("Voltando para a tela incial...");
+                    continue;
+                }
 
                 System.out.print("Salario:");
                 Integer salario = scanner.nextInt();
@@ -63,6 +68,11 @@ public class Cadastro {
                     System.out.printf("Salario: %d", salario_lista.get(indice));
                     System.out.println();
                 }
+                else{
+                    System.out.println("Usuario nao encontrado");
+                    System.out.println("Voltando para a tela incial...");
+                    continue;
+                }
             }
 
 
@@ -76,6 +86,11 @@ public class Cadastro {
                     cpf_lista.remove(cpf_lista.get(indice));
                     salario_lista.remove(salario_lista.get(indice));
                     System.out.println("Usuario removido com sucesso!");
+                }
+                else{
+                    System.out.println("Usuario nao encontrado");
+                    System.out.println("Voltando para a tela incial...");
+                    continue;
                 }
             }
 
